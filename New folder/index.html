@@ -1,0 +1,43 @@
+<html>
+ <head>
+  <title>
+   Profil Perusahaan
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com">
+    
+  </script>
+  
+ </head>
+ <body>
+  <header>
+   Profil Perusahaan
+  </header>
+  <img alt="Foto profil perusahaan, lingkaran dengan latar belakang abu-abu" class="profile-pic" height="150" src="https://picsum.photos/600/600?random=1" width="150"/>
+  <div class="description">
+   <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur iusto ducimus ad similique laboriosam possimus harum non vero, magni, dignissimos sequi quibusdam consequuntur necessitatibus illo?
+   </p>
+   <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nobis explicabo. Eum mollitia rem molestiae impedit iste adipisci similique perferendis laboriosam minus corrupti dolor dicta, perspiciatis quibusdam, libero reiciendis qui?
+   </p>
+  </div>
+  <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded" onclick="changeBackgroundColor()">
+   Ubah Warna
+  </button>
+  <script>
+    function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+  </script>
+ </body>
+</html>
